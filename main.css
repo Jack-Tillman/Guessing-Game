@@ -27,20 +27,20 @@ font-family:'Poppins', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
 background-color:rgb(69, 123, 157);
-display:flex;
-flex:1 1 0;
+text-align: center;
+margin-top:40px;
 }
 .guessing-game-group{
 background-color:rgb(168, 218, 220) ;
-margin:1rem;
-padding:2rem;
+margin:0 auto;
+padding:0rem 2rem 2rem 2rem;
 display:flex;
 flex-direction: column;
-flex:1;
+align-items: center;
+flex:1 0 auto;
 width:100%;
 }
 header{
-padding:1rem;
 margin:1rem auto;   
 }
 main{
@@ -58,14 +58,14 @@ padding:0.5rem;
 }
 
 h2{
-    font-size:1.5rem;
-    padding:0rem 1rem;
+font-size:1rem;
+padding:0rem 1rem;
 }
 
 ul{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+display:flex;
+flex-direction: row;
+justify-content: center;
 }
 
 .input-group{
@@ -121,7 +121,7 @@ text-align: center;
 .guess-box{
 list-style: none;
 box-shadow: 0px 4px 2px -1px rgba(0, 5, 77, 0.5);
-margin: 0.5rem 1rem;
+margin: 0.5rem 0.25rem;
 border: 2px solid  rgb(241, 250, 238);
 padding:0.5rem 1rem;
 border-radius:15%;
@@ -133,7 +133,7 @@ font-size:1rem;
 font-weight:500;
 padding:0.5rem 1rem;
 border-radius:5%;
-margin:0rem 1rem;
+margin:0.5rem 1rem;
 box-shadow: 0px 4px 2px -1px rgba(0, 5, 77, 0.5);
 transition: background-color .20s ease-in-out,border-color .20s ease-in-out,box-shadow .20s ease-in-out; /*eases color transition when user hovers over buttons*/
 }
@@ -168,119 +168,3 @@ color:rgb(69, 123, 157);
 background-color: rgb(69, 123, 157 );
 color:rgb(41, 95, 158);
 }
-
-/*Media Queries! */
-/* laptop */
-@media screen and (max-width:992px){
-body{
-flex:1 0 0;
-}
-    
-.guessing-game-group{
-margin:4rem;
-background-color: lavender;
-flex:1 0 0;
-}
-    
-/* header{
-   
-}
-    
-main{
-    
-}
-    
-h1{
-    
-}
-    
-h2{
-    
-}
-    
-.guesses-display{
-    
-} */
-}
-/*Tablet*/
-
-/* To - Do
-*Finalize color schreme 
-*Finalize font choice and font sizes
-*Make Guess! button float to the top left of the input button
-*hover and click animations + color changes 
-*Style the guesses list 
-*Style the reset button
-*Style the Hint button 
-*media queries
-
-Okay, so what I need to do is to identify the breakpoints I want to target with media queries, 
-identify the elrements that must be changed, change threm adequately, and make sure nothing else breaks 
-desired breakpoints: 361px, 769px,
-*/
-
-/*
-@media screen and (max-width:768px){
-body{
-
-}
-    
-.guessing-game-group{
-    
-}
-    
-header{
-   
-}
-    
-main{
-    
-}
-    
-h1{
-    
-}
-    
-h2{
-    
-}
-    
-.guesses-display{
-    
-}
-    
-
-}
-/*Phone, large*//*
-@media screen and (max-width:576px){
-    body{
-    
-    }
-        
-    .guessing-game-group{
-        
-    }
-        
-    header{
-       
-    }
-        
-    main{
-        
-    }
-        
-    h1{
-        
-    }
-        
-    h2{
-        
-    }
-        
-    .guesses-display{
-        
-    }
-        
-    
-    }
-*/
