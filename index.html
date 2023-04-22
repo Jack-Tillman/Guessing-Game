@@ -10,31 +10,31 @@
     <!-- the MAIN.CSS file is linked here -->
   </head>
   <body>
-    <header>
-      <h1>The Guessing Game!</h1>
-      <h2>Guess a number between 1 - 100</h2>
-    </header>
-    <main>
-      <div class="input-group"> 
-        <input id="player-input" placeholder="TYPE GUESS HERE" maxlength="3" autofocus="autofocus"/>
-        <button class="submit-button">Guess!</button>
-      </div>
-      <div class="prev-guesses">
-        <ul>
-          <li>-</li>
-          <li>-</li>
-          <li>-</li>
-          <li>-</li>
-          <li>-</li>
-        </ul>
-      </div>
+    <div class="guessing-game-group">
+      <header>
+        <h1>The Guessing Game!</h1>
+        <h2>Guess a number between 1 - 100</h2>
+      </header>
+      <main>
+       <div class="input-group"> 
+         <input id="player-input" placeholder="TYPE GUESS HERE" maxlength="3" autofocus="autofocus"/>
+          <button class="submit-button">Guess!</button>
+        </div>
+        <div class="guesses-display">
+          <ul>
+            <li class="guess-box">68</li>
+            <li class="guess-box">34</li>
+            <li class="guess-box">-</li>
+            <li class="guess-box">5</li>
+            <li class="guess-box">100</li>
+          </ul>
+        </div>
       <div class="hint-and-reset">
-        <button id="reset">reset the game</button>
-        <button id="hint-button">Give me a hint!</button>
+        <button id="reset">Reset the Game</button>
+        <button id="hint-button">Give me a Hint!</button>
       </div>
     </main>
-
-
+  </div>
     <!-- <script src='js/guessing-game.js'></script> -->
     <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
   </body>
