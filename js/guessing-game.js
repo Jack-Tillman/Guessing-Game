@@ -72,12 +72,32 @@ function shuffle(array) {
     return array;
   }
 
-
+/* right now the playersGuessSubmission doesn't take the input from the input form, so fix that*/
   function newGame(){
     let game = {
-      playersGuess: 'INSERT PLAYER INPUT HERE',
+      playersGuess: null,
       pastGuesses: [],
-      winningNumber: generateWinningNumber()
+      winningNumber: generateWinningNumber(),
+      playersGuessSubmission: function playersGuessSubmission(numberGuess){
+        const playersGuess = numberGuess;
+        return playersGuess;
+      },
+      difference: function getDifference(playersGuess, winningNumber){
+         playersGuess = this.playersGuess;
+         winningNumber = this.winningNumber;
+         const difference = Math.abs(playersGuess - winningNumber);
+         return difference;
+      },
+      isLower: function(playersGuess, winningNumber){
+        playersGuess = this.playersGuess;
+        winningNumber = this.winningNumber;
+        if (playersGuess < winningNumber){
+          return true;
+        }else{
+          return false;
+        }
+      }
+
     };
     //has a playersGuess and pastGuesses property
     // game.playersGuess = 'INSERT PLAYER INPUT HERE';
@@ -90,6 +110,13 @@ function shuffle(array) {
 
     return game;
   }
+
+  // function playersGuessSubmission(){
+  //   const playersGuess = document.querySelector('input').value;
+  //   console.log(playersGuess);
+  //   return playersGuess;
+
+  // }
 // const testButton = document.querySelector("button");
 
 
