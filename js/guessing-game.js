@@ -43,11 +43,30 @@ checkGuess function
 * 'returns "You\'re lukewarm." if the difference between playersGuess and winningGuess is less than 25'
 * 'returns "You\'re a bit chilly." if the difference between playersGuess and winningGuess is less than 50'
 * 'returns "You\'re ice cold!" if the difference between playersGuess and winningGuess is less than 100'
-
+-> use eventhandlers for these error messages so that they occur on blur 
 newGame function(optional)
 
 provideHint function (optional)
-*/
+// */
+// window.onkeyup = playersGuessSubmission;
+// var input;
+// function playersGuessSubmission(e){
+//   inputTextValue = e.target.value;
+//   if (e.keyCode == 13){
+//     console.log("your guess is: " + inputTextValue);
+//   }
+// }
+// const input = document.getElementById("player-input").value;
+
+// input.addEventListener("onblur", playersGuessSubmission, false);
+
+// function playersGuessSubmission(input){
+//  const playersGuess = input;
+//   console.log(playersGuess);
+//   return playersGuess;
+// }
+//yeah, keep trying on this 
+
 
 function generateWinningNumber(){
 let winningNumber =  Math.floor(Math.random() * 100) + 1;
@@ -78,10 +97,7 @@ function shuffle(array) {
       playersGuess: null,
       pastGuesses: [],
       winningNumber: generateWinningNumber(),
-      playersGuessSubmission: function playersGuessSubmission(numberGuess){
-        const playersGuess = numberGuess;
-        return playersGuess;
-      },
+    
       difference: function getDifference(playersGuess, winningNumber){
          playersGuess = this.playersGuess;
          winningNumber = this.winningNumber;
@@ -96,21 +112,52 @@ function shuffle(array) {
         }else{
           return false;
         }
+      },
+       playersGuessSubmission() { //method declaration
+       const subbtn = document.getElementById('submit-button');
+       let output1 = document.getElementById('output1');
+       subbtn.addEventListener('click', function(e){
+        console.log(e.target);
+       })
+        
+     
       }
-
     };
-    //has a playersGuess and pastGuesses property
-    // game.playersGuess = 'INSERT PLAYER INPUT HERE';
-    // game.pastGuesses = 'INSERT PAST GUESSES HERE';
-    // game.winningNumber = 'generateWinningNumber()'
-
-
-
-
-
     return game;
   }
 
+const output1 = document.getElementById('output1');
+output1.addEventListener('')
+     const subbtn = document.getElementById('submit-button');
+    subbtn.addEventListener('click', function(e){
+     console.log(e.target.value);
+    });
+     
+  
+   
+/*
+playersGuessSubmission() { //method declaration
+       let subbtn = document.getElementById('submit-button');
+       let output1 = document.getElementById('output1');
+        subbtn.addEventListener('click', function(e){
+          let input = document.getElementById('player-input').value;
+          if (input == winningNumber){
+            output1.innerHTML = `Congratulations, you guessed the correct number, which was ${winningNumber}`
+          }else if (input < winningNumber ){
+            output1.innerHTML = `Guess higher!`
+          }else {
+            output1.innerHTML = `Guess lower!`
+          }
+       })
+        
+     
+      }
+    */
+/*
+  //has a playersGuess and pastGuesses property
+  // game.playersGuess = 'INSERT PLAYER INPUT HERE';
+  // game.pastGuesses = 'INSERT PAST GUESSES HERE';
+  // game.winningNumber = 'generateWinningNumber()'
   // function playersGuessSubmission(){
   //   const playersGuess = document.querySelector('input').value;
   //   console.log(playersGuess);
@@ -122,3 +169,18 @@ function shuffle(array) {
 
 
 // testButton.addEventListener("click", runTests, false);
+
+  // playersGuessSubmission: function playersGuessSubmission(numberGuess){
+      //   numberGuess = document.querySelector('input').value;
+      //   const playersGuess = numberGuess;
+      //   return playersGuess;
+      // },
+
+
+
+       // let num = document.getElementById('player-input').value;
+        // playersGuess = document.querySelector('.input');
+        // let result = document.querySelector('#result');
+        // playersGuess.addEventListener('click', function () {
+        //  console.log(playersGuess);
+        //   result.textContent = this.value; */

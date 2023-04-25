@@ -18,16 +18,17 @@
       </header>
       <main>
        <div class="input-group"> 
-         <input id="player-input" placeholder="TYPE GUESS HERE" maxlength="3" autofocus="autofocus" onblur="playersGuessSubmission()"/>
-          <button class="submit-button">Guess!</button>
+         <input id="player-input" class="input" placeholder="Type Guess Here" maxlength="3" autofocus="autofocus" type="text" "/>
+          <button class="submit-button" id="submit-button">Guess!</button>
+          
         </div>
         <div class="guesses-display">
           <ul>
-            <li class="guess-box">68</li>
-            <li class="guess-box">34</li>
-            <li class="guess-box">-</li>
-            <li class="guess-box">5</li>
-            <li class="guess-box">100</li>
+            <li class="guess-box" id="output1">-</li>
+            <li class="guess-box" id="output2">-</li>
+            <li class="guess-box" id="output3">-</li>
+            <li class="guess-box" id="output4">-</li>
+            <li class="guess-box" id="output5">-</li>
           </ul>
         </div>
       <div class="hint-and-reset-group">
