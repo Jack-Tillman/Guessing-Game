@@ -16,155 +16,159 @@ dark blue - 29, 53, 87 => font color
 https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557
 media queries: min-width:1200px, 992px, 768px, 576px
 */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans&family=Poppins&display=swap");
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-color:rgb(29, 53, 87);
-font-family:'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(29, 53, 87);
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-background-color:rgb(69, 123, 157);
-text-align: center;
-margin-top:40px;
+body {
+  background-color: rgb(69, 123, 157);
+  text-align: center;
+  margin-top: 40px;
 }
-.guessing-game-group{
-background-color:rgb(168, 218, 220) ;
-margin:0 auto;
-padding:0rem 2rem 2rem 2rem;
-display:flex;
-flex-direction: column;
-align-items: center;
-flex:1 0 auto;
-width:100%;
+.guessing-game-group {
+  background-color: rgb(168, 218, 220);
+  padding: 0rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 auto;
+  width: 100%;
 }
-header{
-margin:1rem auto;   
+header {
+  margin: 1rem auto;
 }
-main{
-font-size:1rem;
-display:flex;
-flex-direction: column;
-flex: 1;
-justify-content: center;
-align-items: center;        
-} 
-
-h1{
-font-size: 2.5rem;
-padding:0.5rem;
+main {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
-h2{
-font-size:1rem;
-padding:0rem 1rem;
+h1 {
+  font-size: 2.5rem;
+  padding: 0.5rem;
 }
 
-ul{
-display:flex;
-flex-direction: row;
-justify-content: center;
+h2 {
+  font-size: 1rem;
+  padding: 0rem 1rem;
 }
 
-.input-group{
-display:flex;
-margin:2rem auto;
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.submit-button{
-font-family:'Bebas Neue',Tahoma, Geneva, Verdana, sans-serif;
-font-size:1.5rem;
-background-color:rgb(57, 230, 144);
-color: rgb(29, 53, 87);
-border:1px solid transparent;
-border-radius:50%;
-width:4.5rem;
-height:4.5rem;
-text-align:center;
-box-shadow:0px 6px 4px -4px rgba(0, 77, 19, 0.50);
-position:absolute;
-transition: background-color .20s ease-in-out,border-color .20s ease-in-out,box-shadow .20s ease-in-out;
+.input-group {
+  display: flex;
+  margin: 2rem auto;
 }
-.submit-button:hover{
-background-color:rgb(241, 250, 238);
-border:1px solid rgb(57, 230, 144);
-color: rgb(139, 145, 153);
+
+.submit-button {
+  font-family: "Bebas Neue", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  background-color: rgb(57, 230, 144);
+  color: rgb(29, 53, 87);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  text-align: center;
+  box-shadow: 0px 6px 4px -4px rgba(0, 77, 19, 0.5);
+  position: absolute;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
 }
-.submit-button:active{
-background-color:rgb(57, 230, 144);
-color: rgb(29, 53, 87);
+.submit-button:hover {
+  background-color: rgb(241, 250, 238);
+  border: 1px solid rgb(57, 230, 144);
+  color: rgb(139, 145, 153);
+}
+.submit-button:active {
+  background-color: rgb(57, 230, 144);
+  color: rgb(29, 53, 87);
 }
 
 #player-input {
-    font-family: 'IBM Plex Sans', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:1rem;
-    color: rgb(230, 57, 70);
-    background-color: rgb(241, 250, 238);
-    border: 2px solid rgb(29, 53, 87);
-    border-radius: 50%;
-    width: 16rem;
-    height: 16rem;
-    text-align: center;
-    box-shadow: 0px 8px 6px -1px rgba(0, 5, 77, 0.5);
-    position: relative;
+  font-family: "IBM Plex Sans", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  color: rgb(230, 57, 70);
+  background-color: rgb(241, 250, 238);
+  border: 2px solid rgb(29, 53, 87);
+  border-radius: 50%;
+  width: 16rem;
+  height: 16rem;
+  text-align: center;
+  box-shadow: 0px 8px 6px -1px rgba(0, 5, 77, 0.5);
+  position: relative;
 }
 
-.guesses-display{
-padding:0.5rem 1.5rem;
-margin:0.5rem 1rem;
-text-align: center;
+.guesses-display {
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem 1rem;
+  text-align: center;
 }
 
-
-.guess-box{
-list-style: none;
-box-shadow: 0px 4px 2px -1px rgba(0, 5, 77, 0.5);
-margin: 0.5rem 0.25rem;
-border: 2px solid  rgb(241, 250, 238);
-padding:0.5rem 1rem;
-border-radius:15%;
-font-size:1rem;
+.lastGuess{
+    color:black;
+    padding: 3px;
 }
 
-.hint-and-reset{
-font-size:1rem;
-font-weight:500;
-padding:0.5rem 1rem;
-border-radius:5%;
-margin:0.5rem 1rem;
-box-shadow: 0px 4px 2px -1px rgba(0, 5, 77, 0.5);
-transition: background-color .20s ease-in-out,border-color .20s ease-in-out,box-shadow .20s ease-in-out; /*eases color transition when user hovers over buttons*/
+.guess-box {
+  list-style: none;
+  box-shadow: 0px 4px 2px -1px rgba(0, 5, 77, 0.5);
+  margin: 0.5rem 0.25rem;
+  border: 2px solid rgb(241, 250, 238);
+  padding: 0.5rem 1rem;
+  border-radius: 15%;
+  font-size: 1rem;
 }
 
-
-#reset-button{
-background-color:rgb(235, 111, 122);
-color:rgb(241, 250, 238);
-border: 1px solid transparent;
-}
-#reset-button:hover{
-background-color:rgb(241, 250, 238);
-border:1px solid rgb(235, 111, 122);
-color:rgb(212, 60, 73);
-}
-#reset-button:active{
-background-color: rgb(235, 111, 122);
-color:rgb(241, 250, 238);
+.hint-and-reset {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5%;
+  margin: 0.5rem 1rem;
+  box-shadow: 0px 4px 2px -1px rgba(0, 5, 77, 0.5);
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out; /*eases color transition when user hovers over buttons*/
 }
 
-#hint-button{
-border: 1px solid transparent;
-color:rgb(241, 250, 238);
-background-color: rgb(69, 123, 157 );
+#reset-button {
+  background-color: rgb(235, 111, 122);
+  color: rgb(241, 250, 238);
+  border: 1px solid transparent;
 }
-#hint-button:hover{
-background-color:rgb(241, 250, 238);
-border:1px solid rgb(69,123,157);
-color:rgb(69, 123, 157);
+#reset-button:hover {
+  background-color: rgb(241, 250, 238);
+  border: 1px solid rgb(235, 111, 122);
+  color: rgb(212, 60, 73);
 }
-#hint-button:active{
-background-color: rgb(69, 123, 157 );
-color:rgb(41, 95, 158);
+#reset-button:active {
+  background-color: rgb(235, 111, 122);
+  color: rgb(241, 250, 238);
+}
+
+#hint-button {
+  border: 1px solid transparent;
+  color: rgb(241, 250, 238);
+  background-color: rgb(69, 123, 157);
+}
+#hint-button:hover {
+  background-color: rgb(241, 250, 238);
+  border: 1px solid rgb(69, 123, 157);
+  color: rgb(69, 123, 157);
+}
+#hint-button:active {
+  background-color: rgb(69, 123, 157);
+  color: rgb(41, 95, 158);
 }

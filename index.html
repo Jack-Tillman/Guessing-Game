@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" charset="UTF-8">
     <title>Guessing Game</title>
     <link rel="stylesheet" href="main.css">
-
     <!-- the MAIN.CSS file is linked here -->
   </head>
   <body>
@@ -18,17 +17,18 @@
       </header>
       <main>
        <div class="input-group"> 
-         <input id="player-input" class="input" placeholder="Type Guess Here" maxlength="3" autofocus="autofocus" type="text" "/>
-          <button class="submit-button" id="submit-button">Guess!</button>
-          
+         <input id="player-input" class="inputGuess" placeholder="Type Guess Here" maxlength="3" autofocus="autofocus" type="text" />
+            <button class="submit-button" id="submit-button">Guess!</button>       
         </div>
         <div class="guesses-display">
+          <p class="lastGuess"></p>
+          <p class="lowOrHigh"></p>
           <ul>
-            <li class="guess-box" id="output1">-</li>
-            <li class="guess-box" id="output2">-</li>
-            <li class="guess-box" id="output3">-</li>
-            <li class="guess-box" id="output4">-</li>
-            <li class="guess-box" id="output5">-</li>
+            <li class="guess-box" id="id_1 output"></li>
+            <li class="guess-box" id="id_2 output"></li>
+            <li class="guess-box" id="id_3 output"></li>
+            <li class="guess-box" id="id_4 output"></li>
+            <li class="guess-box" id="id_5 output"></li>
           </ul>
         </div>
       <div class="hint-and-reset-group">
